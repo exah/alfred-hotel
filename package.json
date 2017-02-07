@@ -24,7 +24,8 @@
   ],
   "keywords": [
     "alfred",
-    "workflow"
+    "workflow",
+    "hotel"
   ],
   "dependencies": {
     "alfy": "^0.6.0"
