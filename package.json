@@ -1,0 +1,37 @@
+{
+  "name": "alfred-hotel",
+  "version": "0.0.0",
+  "description": "Manage Hotel Apps",
+  "license": "MIT",
+  "repository": "exah/alfred-hotel",
+  "author": {
+    "name": "John Grishin",
+    "email": "hello@johngrish.in",
+    "url": "johngrish.in"
+  },
+  "engines": {
+    "node": ">=4"
+  },
+  "scripts": {
+    "test": "standard && ava",
+    "postinstall": "alfy-init",
+    "preuninstall": "alfy-cleanup"
+  },
+  "files": [
+    "index.js",
+    "icon.png",
+    "info.plist"
+  ],
+  "keywords": [
+    "alfred",
+    "workflow"
+  ],
+  "dependencies": {
+    "alfy": "^0.6.0"
+  },
+  "devDependencies": {
+    "alfy-test": "^0.3.0",
+    "ava": "^0.15.2",
+    "standard": "^8.6.0"
+  }
+}
