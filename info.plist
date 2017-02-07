@@ -125,7 +125,7 @@
 			<key>config</key>
 			<dict>
 				<key>alfredfiltersresults</key>
-				<false/>
+				<true/>
 				<key>argumenttype</key>
 				<integer>1</integer>
 				<key>escaping</key>
