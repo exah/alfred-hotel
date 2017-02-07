@@ -2,7 +2,7 @@
 
 [![Standard - JavaScript Style Guide](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)
 
-> [Alfred 3](https://www.alfredapp.com/) workflow that lets you to start, open and stop [Hotel](https://github.com/typicode/hotel) apps
+> [Alfred 3](https://www.alfredapp.com/) workflow that lets you to start, stop and open [Hotel](https://github.com/typicode/hotel) apps
 
 ![alfred hotel workflow screenshot in action](screenshot.png)
 
@@ -35,7 +35,7 @@ With selected app you can:
 
 ## Hotel Settings
 
-Currently workflow works only with default Hotel settings.
+Currently workflow only works with default Hotel settings:
 
 - Hotel is available at `http://localhost:2000`
 - Local domains are at `.dev` zone
@@ -44,6 +44,7 @@ Currently workflow works only with default Hotel settings.
 ## Related
 
 - [alfy](https://github.com/sindresorhus/alfy) - Create Alfred workflows with ease
+- [hotel](https://github.com/typicode/hotel) - A simple process manager for developers
 
 
 ## License
