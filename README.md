@@ -2,6 +2,8 @@
 
 > Alfred 3 workflow that allow you to start, open and stop [Hotel](https://github.com/typicode/hotel) apps.
 
+![](screenshot.png)
+
 
 ## Requirements
 
