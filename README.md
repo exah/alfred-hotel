@@ -31,6 +31,7 @@ With selected app you can:
 - <kbd>Alt</kbd> + <kbd>Enter</kbd> to open app without local domain (http://127.0.0.1:50409)
 - <kbd>Command</kbd> + <kbd>Enter</kbd> to stop selected app
 - <kbd>Ctrl</kbd> + <kbd>Enter</kbd> to open project folder
+- <kbd>Ctrl</kbd> + <kbd>C</kbd> to copy app url
 - <kbd>Shift</kbd> to preview url in quicklook
 
 

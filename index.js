@@ -20,6 +20,10 @@ alfy.fetch(`${HOST}/_/servers`)
         title: id,
         subtitle: status,
         arg: url,
+        text: {
+          copy: url,
+          largetype: url
+        },
         quicklookurl: status === 'running' ? url : '',
         mods: {
           alt: {
