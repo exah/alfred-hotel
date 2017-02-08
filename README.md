@@ -9,7 +9,7 @@
 
 ## Requirements
 
-- [Node.js](https://nodejs.org) >= 4.x
+- [Node.js](https://nodejs.org) >= 6.x
 - [Hotel](https://github.com/typicode/hotel)
 - Alfred [Powerpack](https://www.alfredapp.com/powerpack/)
 
