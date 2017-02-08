@@ -229,7 +229,7 @@
 		</dict>
 	</array>
 	<key>readme</key>
-	<string></string>
+	<string>Alfred 3 workflow that lets you to start, stop and open Hotel apps</string>
 	<key>uidata</key>
 	<dict>
 		<key>4A0A48A6-ECA0-4049-8A43-60926669C4B1</key>
@@ -274,6 +274,13 @@
 			<key>ypos</key>
 			<integer>40</integer>
 		</dict>
+	</dict>
+	<key>variables</key>
+	<dict>
+		<key>HOTEL_HOST</key>
+		<string>http://127.0.0.1:2000</string>
+		<key>TLD</key>
+		<string>dev</string>
 	</dict>
 	<key>version</key>
 	<string>0.0.0</string>

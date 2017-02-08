@@ -2,7 +2,7 @@
 
 [![Standard - JavaScript Style Guide](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)
 
-> [Alfred 3](https://www.alfredapp.com/) workflow that lets you to start, stop and open [Hotel](https://github.com/typicode/hotel) apps
+> [Alfred 3](https://www.alfredapp.com/) workflow that lets you start, stop and open [Hotel](https://github.com/typicode/hotel) apps
 
 ![alfred hotel workflow screenshot in action](screenshot.png)
 
@@ -10,7 +10,7 @@
 ## Requirements
 
 - [Node.js](https://nodejs.org) >= 4.x
-- [Hotel](https://github.com/typicode/hotel) with [default settings](#hotel-settings)
+- [Hotel](https://github.com/typicode/hotel)
 - Alfred [Powerpack](https://www.alfredapp.com/powerpack/)
 
 
@@ -35,12 +35,14 @@ With selected app you can:
 - <kbd>Shift</kbd> to preview url in quicklook
 
 
-## Hotel Settings
+## Settings
 
-Currently workflow only works with default Hotel settings:
+By default workflow works with following Hotel settings:
 
 - Hotel is available at `http://localhost:2000`
-- Local domains are at `.dev` zone
+- Local domains are in `.dev` zone
+
+You can change this in [`Configure workflow and variables`](screenshot-settings.png).
 
 
 ## Related

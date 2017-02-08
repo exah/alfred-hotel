@@ -1,14 +1,14 @@
 const alfy = require('alfy')
-const { HOST = 'http://127.0.0.1:2000', TLD = 'dev' } = process.env
+const { HOTEL_HOST = 'http://127.0.0.1:2000', TLD = 'dev' } = process.env
 
-alfy.fetch(`${HOST}/_/servers`)
+alfy.fetch(`${HOTEL_HOST}/_/servers`)
   .then(servers => {
     const list = Object.keys(servers).map(id => {
-      const { status } = servers[id]
+      const { status, cwd } = servers[id]
       const url = `http://${id}.${TLD}`
       const run = command => `{
         "alfredworkflow": {
-          "arg": "${HOST}/_/servers/${id}",
+          "arg": "${HOTEL_HOST}/_/servers/${id}",
           "variables": {
             "command": "${command}"
           }
@@ -27,7 +27,7 @@ alfy.fetch(`${HOST}/_/servers`)
         quicklookurl: status === 'running' ? url : '',
         mods: {
           alt: {
-            arg: `${HOST}/${id}`,
+            arg: `${HOTEL_HOST}/${id}`,
             subtitle: 'open without proxy'
           },
           ctrl: {
