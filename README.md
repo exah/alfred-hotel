@@ -30,6 +30,7 @@ With selected app you can:
 - <kbd>Enter</kbd> to start and open app in default browser (http://example.dev)
 - <kbd>Alt</kbd> + <kbd>Enter</kbd> to open app without local domain (http://127.0.0.1:50409)
 - <kbd>Command</kbd> + <kbd>Enter</kbd> to stop selected app
+- <kbd>Ctrl</kbd> + <kbd>Enter</kbd> to open project folder
 - <kbd>Shift</kbd> to preview url in quicklook
 
 

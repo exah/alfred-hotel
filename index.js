@@ -26,6 +26,11 @@ alfy.fetch(`${HOST}/_/servers`)
             arg: `${HOST}/${id}`,
             subtitle: 'open without proxy'
           },
+          ctrl: {
+            arg: `file://${cwd}`,
+            type: 'file',
+            subtitle: 'open project folder'
+          },
           cmd: status === 'running'
             ? {
               arg: run('stop'),
