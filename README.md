@@ -9,9 +9,9 @@
 
 ## Requirements
 
-- [Node.js](https://nodejs.org) >= 6.x
+- [Node.js](https://nodejs.org) >= 6.4
 - [Hotel](https://github.com/typicode/hotel)
-- Alfred [Powerpack](https://www.alfredapp.com/powerpack/)
+- [Alfred 3 with Powerpack](https://www.alfredapp.com/powerpack/)
 
 
 ## Install

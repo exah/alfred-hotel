@@ -9,8 +9,9 @@
     "email": "hello@johngrish.in",
     "url": "johngrish.in"
   },
+  "engine-strict": true,
   "engines": {
-    "node": ">=6"
+    "node": ">=6.4"
   },
   "scripts": {
     "test": "standard && ava",
