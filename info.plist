@@ -110,9 +110,9 @@
 				<key>matchcasesensitive</key>
 				<false/>
 				<key>matchmode</key>
-				<integer>1</integer>
+				<integer>0</integer>
 				<key>matchstring</key>
-				<string>stop</string>
+				<string></string>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.utility.filter</string>
@@ -143,7 +143,7 @@
 				<key>runningsubtext</key>
 				<string>Searching...</string>
 				<key>script</key>
-				<string>./node_modules/.bin/run-node index.js "$1"</string>
+				<string>./node_modules/.bin/run-node index.js</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -172,7 +172,7 @@
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
-				<string>curl -X POST "$1/$command"</string>
+				<string>curl -sX POST "$1/$command"</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -197,9 +197,9 @@
 				<key>removeextension</key>
 				<false/>
 				<key>text</key>
-				<string>{query}</string>
+				<string>{var:command}: {var:app}</string>
 				<key>title</key>
-				<string>Stoped</string>
+				<string>Hotel</string>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.output.notification</string>
@@ -218,7 +218,7 @@
 				<key>matchmode</key>
 				<integer>2</integer>
 				<key>matchstring</key>
-				<string>stop</string>
+				<string>start|stop</string>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.utility.filter</string>

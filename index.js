@@ -10,6 +10,7 @@ alfy.fetch(`${HOTEL_HOST}/_/servers`)
         "alfredworkflow": {
           "arg": "${HOTEL_HOST}/_/servers/${id}",
           "variables": {
+            "app": "${id}",
             "command": "${command}"
           }
         }
@@ -24,7 +25,7 @@ alfy.fetch(`${HOTEL_HOST}/_/servers`)
           copy: url,
           largetype: url
         },
-        quicklookurl: status === 'running' ? url : '',
+        quicklookurl: status === 'running' ? url : null,
         mods: {
           alt: {
             arg: `${HOTEL_HOST}/${id}`,
@@ -40,7 +41,10 @@ alfy.fetch(`${HOTEL_HOST}/_/servers`)
               arg: run('stop'),
               subtitle: 'stop'
             }
-            : {}
+            : {
+              arg: run('start'),
+              subtitle: 'start'
+            }
         }
       }
     })
