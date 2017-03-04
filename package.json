@@ -33,7 +33,7 @@
   },
   "devDependencies": {
     "alfy-test": "^0.3.0",
-    "ava": "^0.15.2",
-    "standard": "^8.6.0"
+    "ava": "^0.18.2",
+    "standard": "^9.0.0"
   }
 }
