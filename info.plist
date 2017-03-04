@@ -283,7 +283,7 @@
 		<string>dev</string>
 	</dict>
 	<key>version</key>
-	<string>0.0.3</string>
+	<string>0.0.4</string>
 	<key>webaddress</key>
 	<string>https://github.com/exah/alfred-hotel#readme</string>
 </dict>
