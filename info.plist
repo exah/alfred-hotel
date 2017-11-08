@@ -21,11 +21,37 @@
 				<false/>
 			</dict>
 		</array>
+		<key>68F387C2-2B17-4600-B930-341E88037204</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>4A0A48A6-ECA0-4049-8A43-60926669C4B1</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>901537B3-4E1E-4727-973A-136449A997F0</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
 				<string>4B8DD09E-BC52-4907-94D4-65D008074A23</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>A731FBA0-E38A-43B8-87C7-F357D13CA10D</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>68F387C2-2B17-4600-B930-341E88037204</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -49,6 +75,16 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>901537B3-4E1E-4727-973A-136449A997F0</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>A731FBA0-E38A-43B8-87C7-F357D13CA10D</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -124,8 +160,35 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>curl -sX POST "$1/$command"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>4B8DD09E-BC52-4907-94D4-65D008074A23</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>alfredfiltersresults</key>
 				<true/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
 				<key>argumenttype</key>
 				<integer>1</integer>
 				<key>escaping</key>
@@ -167,25 +230,21 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>concurrently</key>
+				<key>inputstring</key>
+				<string>{var:command}</string>
+				<key>matchcasesensitive</key>
 				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>curl -sX POST "$1/$command"</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>0</integer>
+				<key>matchmode</key>
+				<integer>2</integer>
+				<key>matchstring</key>
+				<string>start|stop</string>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.action.script</string>
+			<string>alfred.workflow.utility.filter</string>
 			<key>uid</key>
-			<string>4B8DD09E-BC52-4907-94D4-65D008074A23</string>
+			<string>901537B3-4E1E-4727-973A-136449A997F0</string>
 			<key>version</key>
-			<integer>2</integer>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -211,6 +270,31 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>curl -sX POST "$1/stop";
+sleep 2;
+curl -sX POST "$1/start";</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>68F387C2-2B17-4600-B930-341E88037204</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>inputstring</key>
 				<string>{var:command}</string>
 				<key>matchcasesensitive</key>
@@ -218,12 +302,12 @@
 				<key>matchmode</key>
 				<integer>2</integer>
 				<key>matchstring</key>
-				<string>start|stop</string>
+				<string>restart</string>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.utility.filter</string>
 			<key>uid</key>
-			<string>901537B3-4E1E-4727-973A-136449A997F0</string>
+			<string>A731FBA0-E38A-43B8-87C7-F357D13CA10D</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -235,9 +319,9 @@
 		<key>4A0A48A6-ECA0-4049-8A43-60926669C4B1</key>
 		<dict>
 			<key>xpos</key>
-			<integer>540</integer>
+			<integer>530</integer>
 			<key>ypos</key>
-			<integer>180</integer>
+			<integer>250</integer>
 		</dict>
 		<key>4B8DD09E-BC52-4907-94D4-65D008074A23</key>
 		<dict>
@@ -246,6 +330,13 @@
 			<key>ypos</key>
 			<integer>180</integer>
 		</dict>
+		<key>68F387C2-2B17-4600-B930-341E88037204</key>
+		<dict>
+			<key>xpos</key>
+			<integer>340</integer>
+			<key>ypos</key>
+			<integer>320</integer>
+		</dict>
 		<key>901537B3-4E1E-4727-973A-136449A997F0</key>
 		<dict>
 			<key>xpos</key>
@@ -253,12 +344,19 @@
 			<key>ypos</key>
 			<integer>210</integer>
 		</dict>
+		<key>A731FBA0-E38A-43B8-87C7-F357D13CA10D</key>
+		<dict>
+			<key>xpos</key>
+			<integer>240</integer>
+			<key>ypos</key>
+			<integer>350</integer>
+		</dict>
 		<key>CDE4F755-C72C-46DF-8193-801A52D4DD55</key>
 		<dict>
 			<key>xpos</key>
 			<integer>40</integer>
 			<key>ypos</key>
-			<integer>110</integer>
+			<integer>180</integer>
 		</dict>
 		<key>D0FF8766-8F7D-4D83-B44A-9024F159E14E</key>
 		<dict>

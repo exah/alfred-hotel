@@ -30,6 +30,7 @@ With selected app you can:
 - <kbd>Enter</kbd> to start and open app in default browser (http://example.dev)
 - <kbd>Alt</kbd> + <kbd>Enter</kbd> to open app without local domain (http://127.0.0.1:50409)
 - <kbd>Command</kbd> + <kbd>Enter</kbd> to start/stop selected app
+- <kbd>Fn</kbd> + <kbd>Enter</kbd> to restart selected app
 - <kbd>Command</kbd> + <kbd>C</kbd> to copy app url
 - <kbd>Ctrl</kbd> + <kbd>Enter</kbd> to open app folder
 - <kbd>Shift</kbd> to preview url with quicklook
