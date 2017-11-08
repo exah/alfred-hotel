@@ -14,6 +14,7 @@
     "node": ">=6.4"
   },
   "scripts": {
+    "deploy": "np",
     "test": "standard && ava",
     "postinstall": "alfy-init",
     "preuninstall": "alfy-cleanup"
@@ -34,6 +35,7 @@
   "devDependencies": {
     "alfy-test": "^0.3.0",
     "ava": "^0.18.2",
+    "np": "^2.16.1",
     "standard": "^9.0.0"
   }
 }
