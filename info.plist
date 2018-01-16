@@ -373,13 +373,6 @@ curl -sX POST "$1/start";</string>
 			<integer>40</integer>
 		</dict>
 	</dict>
-	<key>variables</key>
-	<dict>
-		<key>HOTEL_HOST</key>
-		<string>http://127.0.0.1:2000</string>
-		<key>TLD</key>
-		<string>dev</string>
-	</dict>
 	<key>version</key>
 	<string>0.0.4</string>
 	<key>webaddress</key>

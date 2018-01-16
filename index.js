@@ -1,13 +1,27 @@
-const { fetch, output } = require('alfy')
-const { HOTEL_HOST = 'http://127.0.0.1:2000', TLD = 'dev' } = process.env
+const { fetch, output, error } = require('alfy')
 
-fetch(`${HOTEL_HOST}/_/servers`)
+const requireOrExit = (file) => {
+  try {
+    return require(file)
+  } catch (e) {
+    error(e)
+    process.exit(1)
+  }
+}
+
+const path = require('path')
+const home = require('os').homedir()
+const config = requireOrExit(path.join(home, '.hotel', 'conf.json'))
+const { host = 'localhost', port = 2000, tld = 'dev' } = config
+const hotel = `http://${host}:${port}`
+
+fetch(`${hotel}/_/servers`)
   .then((servers) => Object.keys(servers).map((id) => {
     const { status, cwd } = servers[id]
-    const url = `http://${id}.${TLD}`
+    const url = `http://${id}.${tld}`
     const run = (command) => `{
       "alfredworkflow": {
-        "arg": "${HOTEL_HOST}/_/servers/${id}",
+        "arg": "${hotel}/_/servers/${id}",
         "variables": {
           "app": "${id}",
           "command": "${command}"
@@ -27,7 +41,7 @@ fetch(`${HOTEL_HOST}/_/servers`)
       quicklookurl: status === 'running' ? url : null,
       mods: {
         alt: {
-          arg: `${HOTEL_HOST}/${id}`,
+          arg: `${hotel}/${id}`,
           subtitle: 'open without proxy'
         },
         ctrl: {

@@ -10,7 +10,7 @@
 ## Requirements
 
 - [Node.js](https://nodejs.org) >= 6.4
-- [Hotel](https://github.com/typicode/hotel)
+- [Hotel](https://github.com/typicode/hotel) >= 0.8
 - [Alfred 3 with Powerpack](https://www.alfredapp.com/powerpack/)
 
 
@@ -43,7 +43,7 @@ By default workflow works with following Hotel settings:
 - Hotel is available at `http://localhost:2000`
 - Local domains are in `.dev` zone
 
-You can change this in [`Configure workflow and variables`](screenshot-settings.png).
+You can change this in [`~/.hotel/conf.json`](https://github.com/typicode/hotel#configurations-logs-and-self-signed-ssl-certificate).
 
 
 ## Related
