@@ -12,7 +12,7 @@ const requireOrExit = (file) => {
 const path = require('path')
 const home = require('os').homedir()
 const config = requireOrExit(path.join(home, '.hotel', 'conf.json'))
-const { host = 'localhost', port = 2000, tld = 'dev' } = config
+const { host = 'localhost', port = 2000, tld = 'localhost' } = config
 const hotel = `http://${host}:${port}`
 
 fetch(`${hotel}/_/servers`)

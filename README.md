@@ -41,7 +41,7 @@ With selected app you can:
 By default workflow works with following Hotel settings:
 
 - Hotel is available at `http://localhost:2000`
-- Local domains are in `.dev` zone
+- Local domains are in `.localhost` zone
 
 You can change this in [`~/.hotel/conf.json`](https://github.com/typicode/hotel#configurations-logs-and-self-signed-ssl-certificate).
 
