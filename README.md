@@ -2,7 +2,7 @@
 
 [![Standard - JavaScript Style Guide](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)
 
-> [Alfred 3](https://www.alfredapp.com/) workflow that lets you start, stop and open [Hotel](https://github.com/typicode/hotel) apps
+> [Alfred 3+](https://www.alfredapp.com/) workflow that lets you start, stop and open [Hotel](https://github.com/typicode/hotel) apps
 
 ![alfred hotel workflow screenshot in action](screenshot.png)
 
@@ -11,7 +11,7 @@
 
 - [Node.js](https://nodejs.org) >= 6.4
 - [Hotel](https://github.com/typicode/hotel) >= 0.8
-- [Alfred 3 with Powerpack](https://www.alfredapp.com/powerpack/)
+- [Alfred with Powerpack](https://www.alfredapp.com/powerpack/) >= 3
 
 
 ## Install
